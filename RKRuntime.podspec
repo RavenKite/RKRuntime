@@ -15,7 +15,9 @@ Pod::Spec.new do |s|
 
   s.source       = { :git => 'https://github.com/RavenKite/RKRuntime.git', :tag => s.version.to_s }
 
-  s.platform     = :ios, "6.0"
+  s.ios.deployment_target = '6.0'
+  
+  s.osx.deployment_target = '10.12'
 
   s.source_files = 'Classes/**/*'
 
